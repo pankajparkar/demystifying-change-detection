@@ -9,6 +9,6 @@ export class PostService {
   constructor(private http: HttpClient) { }
 
   getPostList () {
-    return this.http.get('/assets/posts.json')
+    return this.http.get('assets/posts.json')
   }
 }
