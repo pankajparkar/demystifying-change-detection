@@ -9,6 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "predeploy": "ng build --prod --base-href /demystifying-change-detection/",
     "deploy": "npx gh-pages -d dist/demystifying-change-detection"
   },
   "private": true,
