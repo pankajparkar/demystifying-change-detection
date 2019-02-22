@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [{
-  path: 'default-strategy', loadChildren: './default-strategy/default-strategy.module#DefaultStrategyModule' 
-}, 
-{
-  path: '**', redirectTo: 'default-strategy'
-}
+const routes: Routes = [
+  { path: 'default-strategy', loadChildren: './default-strategy/default-strategy.module#DefaultStrategyModule' }, 
+  { path: 'onpush-strategy', loadChildren: './onpush-strategy/onpush-strategy.module#OnPushStrategyModule' }, 
+  { path: '**', redirectTo: 'default-strategy'}
 ];
 
 @NgModule({
