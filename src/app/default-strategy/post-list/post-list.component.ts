@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
+import { PostService } from 'src/app/services/post.service';
 
 @Component({
   selector: 'dcd-post-list',
@@ -8,11 +9,12 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 })
 export class PostListComponent implements OnInit {
 
-  @Input() posts;
+  posts;
 
-  constructor() { }
+  constructor(private postsService: PostService) { }
 
-  ngOnInit() {
+  ngOnInit () {
+    this.posts = this.postsService.getPostList();
   }
 
 }
