@@ -3,4 +3,13 @@
     <h5 class="card-title">{{post.title}}</h5>
     <p class="card-text">{{post.body}}</p>
   </div>
+  <ul class="list-group">
+    <li class="list-group-item active">Comments</li>
+    <li class="list-group-item" *ngFor="let comment of post.comments">
+      {{comment.text}}
+    </li>
+    <li class="list-group-item">
+      <input [(ngModel)]="newComment" /><button (click)="addComment(post, newComment)">+</button>
+    </li>
+  </ul>
 </div>

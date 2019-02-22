@@ -12,6 +12,10 @@ export class PostComponent implements OnInit, AfterViewChecked {
 
   constructor(private el: ElementRef, private zone: NgZone) { }
 
+  addComment (post, newComment) {
+    post.comments.push({text: newComment})
+  }
+
   ngOnInit() {
   }
 
