@@ -4,6 +4,7 @@
     {{comment.text}}
   </li>
   <li class="list-group-item">
-    <input [(ngModel)]="newComment" /><button (click)="addComment(post, newComment)">+</button>
+    <input [(ngModel)]="newComment" />
+    <button [disabled]="!newComment" (click)="addComment.emit(newComment);newComment=''">+</button>
   </li>
 </ul>

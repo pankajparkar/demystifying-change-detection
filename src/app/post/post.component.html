@@ -3,5 +3,5 @@
     <h5 class="card-title">{{post.title}}</h5>
     <p class="card-text">{{post.body}}</p>
   </div>
-  <dcd-comment-list [comments]="post.comments"></dcd-comment-list>
+  <dcd-comment-list [comments]="post.comments" (addComment)="addComment(post, $event)"></dcd-comment-list>
 </div>
