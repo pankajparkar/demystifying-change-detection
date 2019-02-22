@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{ENZJ:function(t,n,o){"use strict";o.d(n,"a",function(){return r});var e=o("CcnG"),s=o("t/Na"),r=function(){function t(t){this.http=t}return t.prototype.getPostList=function(){return this.http.get("/assets/posts.json")},t.ngInjectableDef=e.S({factory:function(){return new t(e.W(s.c))},token:t,providedIn:"root"}),t}()}}]);
