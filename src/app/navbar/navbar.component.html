@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Change Detection</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" [routerLink]="['/default-strategy']" routerLinkActive>
+        <a class="nav-link">Default Strategy <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" [routerLink]="['/some-onpush-strategy']" routerLinkActive>
+        <a class="nav-link">Some OnPush Strategy <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" [routerLink]="['/all-onpush-strategy']" routerLinkActive>
+        <a class="nav-link">All OnPush Strategy <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
