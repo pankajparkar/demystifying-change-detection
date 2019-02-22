@@ -9,6 +9,6 @@ export class PostService {
   constructor(private http: HttpClient) { }
 
   getPostList () {
-    return this.http.get('https://jsonplaceholder.typicode.com/posts')
+    return this.http.get('/assets/posts.json')
   }
 }
