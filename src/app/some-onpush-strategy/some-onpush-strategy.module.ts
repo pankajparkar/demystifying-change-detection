@@ -5,14 +5,14 @@ import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { OnPushStrategyRoutingModule } from './onpush-strategy-routing.module';
+import { SomeOnPushStrategyRoutingModule } from './some-strategy-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
     HttpClientModule,
     FormsModule,
-    OnPushStrategyRoutingModule
+    SomeOnPushStrategyRoutingModule
   ],
   declarations: [
     PostComponent,
@@ -20,4 +20,4 @@ import { OnPushStrategyRoutingModule } from './onpush-strategy-routing.module';
     PostListComponent,
   ]
 })
-export class OnPushStrategyModule { }
+export class SomeOnPushStrategyModule { }

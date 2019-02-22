@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: 'default-strategy', loadChildren: './default-strategy/default-strategy.module#DefaultStrategyModule' }, 
-  { path: 'onpush-strategy', loadChildren: './onpush-strategy/onpush-strategy.module#OnPushStrategyModule' }, 
+  { path: 'some-onpush-strategy', loadChildren: './some-onpush-strategy/some-onpush-strategy.module#SomeOnPushStrategyModule' }, 
   { path: '**', redirectTo: 'default-strategy'}
 ];
 

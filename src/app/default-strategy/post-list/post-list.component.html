@@ -1,7 +1,7 @@
 <div class="container">
   <h1>Posts</h1>
   <div class="row">
-    <div class="col-sm" *ngFor="let post of (posts | async) | slice: 0: 3">
+    <div class="col-sm" *ngFor="let post of posts">
       <dcd-post [post]="post"></dcd-post>
     </div>
   </div>

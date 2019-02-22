@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { PostService } from 'src/app/services/post.service';
 
 @Component({
@@ -11,7 +11,7 @@ export class PostListComponent implements OnInit {
 
   posts;
 
-  constructor(private postsService: PostService) { }
+  constructor(private postsService: PostService, private cd: ChangeDetectorRef) { }
 
   ngOnInit () {
     this.postsService.getPostList().subscribe(
