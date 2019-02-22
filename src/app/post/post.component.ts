@@ -24,7 +24,7 @@ export class PostComponent implements OnInit, AfterViewChecked {
       this.el.nativeElement.classList.add('highlight')
       setTimeout(() => {
         this.el.nativeElement.classList.remove('highlight')
-      }, 2000)
+      }, 1500)
     })
   }
 

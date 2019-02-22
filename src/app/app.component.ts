@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { PostService } from './post.service';
+import { PostService } from './services/post.service';
 
 @Component({
   selector: 'dcd-root',
