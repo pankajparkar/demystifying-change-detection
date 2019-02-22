@@ -10,6 +10,7 @@ export class CommentListComponent implements OnInit {
 
   @Input() comments
   @Output() addComment = new EventEmitter();
+  newComment
 
   constructor(private el: ElementRef, private zone: NgZone) { }
 
