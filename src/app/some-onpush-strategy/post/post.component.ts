@@ -4,7 +4,6 @@ import { Component, OnInit, Input, ElementRef, AfterViewChecked, NgZone, ViewEnc
   selector: 'dcd-post',
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css'],
-  encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PostComponent implements OnInit, AfterViewChecked {
